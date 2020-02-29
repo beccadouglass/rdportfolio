@@ -1,4 +1,20 @@
 @import "bootstrap";
+@import url('https://fonts.googleapis.com/css?family=Courgette|Muli|Poppins&display=swap');
+
+h2 {
+  text-align: center;
+  padding: 20px;
+  color: rgb(255, 255, 255);
+}
+
+body {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  /*font-family: 'Muli', ;*/
+  font-family: 'Poppins', ;
+  background: image_url('black_paper.png');
+}
 
 * {
   margin: 0;
@@ -7,15 +23,181 @@
 }
 
 html {
+  height: 100%;
   background-color: #fff;
   color: #555555;
-  font-family: 'Lato', 'Arial', sans-serif;
   font-weight: 300;
   font-size: 20px;
   text-rendering: optimizeLegibility;
 }
 
+#flex-content-container {
+  flex: 1;
+}
+
+/*footer*/
+#footer {
+  position: relative;
+  width: 100%;
+  min-height: 100px;
+  background-color: rgba(36, 32, 33, 0.9);
+  color: white;
+  padding: 10px 0px;
+  margin-top: 30px;
+}
+
+#footer a {
+  color: white;
+}
+
 .row {
   max-width: 1140px;
   margin: 0 auto;
+}
+
+header {
+  height: 100vh;
+}
+
+.navbar {
+  box-shadow: 0px 1px 2px #6d6c6c;
+  background: image_url('concrete_seamless.png');
+  /*background-color: #222222;*/
+  color: #222222;
+  text-align: right;
+  padding-right: 40px;
+}
+
+.navbar-brand {
+  font-family: 'Courgette', ;
+  color: #222222;
+  margin-right: 40px;
+}
+
+.about {
+  margin: 40px 10px;
+  font-family: 'Muli', ;
+  margin: 20px, 10px;
+}
+
+/*Links*/
+a:link,
+a:visited {
+  color: rgb(116, 115, 115);
+  padding: 5px 10px;
+  /*text-align: center;*/
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover,
+a:active {
+  color: rgb(175, 176, 177);
+}
+
+.project-link {
+  text-align: center;
+}
+
+.link-size {
+  font-size: 12px;
+  text-align: left;
+}
+
+/*buttons*/
+.button1 {
+  background-color: #222222;
+  font-size: 20px;
+  font-family: Poppins;
+  color: #fff;
+  padding: 12px 28px;
+  border-radius: 12px;
+  margin: 20px 10px;
+}
+
+.button2 {
+  color: #fff;
+  background-color: #222222;
+  font-size: 14px;
+  font-family: Poppins;
+  padding: 5px 10px;
+  border-radius: 12px;
+  margin: 20px 10px;
+}
+
+button:hover,
+button:active {
+  box-shadow: 0px 5px 12px 0px #8db1ff;
+}
+
+
+.hero {
+  background: image_url('rebeccabw.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 500px;
+
+}
+
+.me {
+  height: 150px;
+  border-radius: 60px;
+  border-style: solid;
+  border-color: #50678E;
+  margin-top: 40px;
+}
+
+.box {
+  float: left;
+  width: 42.5%;
+  margin-left: 5%;
+  margin-top: 80px;
+}
+
+/*Cards*/
+.card-img-top {
+  width: 100%;
+  height: 250px;
+  opacity: 1.0;
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  filter: grayscale(50%);
+  filter: rgb(32, 32, 32);
+  /* IE 6-9 */
+  box-shadow: 0px 0px 5px 0px #616161;
+
+}
+
+.card-img-top:hover {
+  opacity: 1.0;
+  transition: .3s ease;
+  -webkit-filter: none;
+  -moz-filter: none;
+  -ms-filter: none;
+  filter: none;
+}
+
+.card {
+  box-shadow: 2px 3px 1px 0px #d6d6d6;
+  margin-bottom: 20px;
+  width: 18rem;
+  max-width: 18rem;
+}
+
+.card-deck {
+  margin: 40px 40px;
+  align-content: center;
+
+}
+
+.card-title {
+  text-align: center;
+  padding-top: 5px;
+}
+
+.card-text {
+  margin: 10px;
 }

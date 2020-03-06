@@ -64,6 +64,7 @@ gem 'jquery-rails'
 gem 'popper_js', '~> 1.11.1'
 gem 'normalize-rails'
 gem 'bootstrap', '4.0.0.alpha6'
+gem 'font-awesome-sass', '~> 5.12.0'
 
 source 'https://rails-assets.org' do
   gem 'rails-assets-tether', '>= 1.3.3'

@@ -7,16 +7,16 @@
 
 <body>
 <div class ="my-container">
-  <!-- <div class="row"> -->
+  <!-- <div class="row justify-content-center"> -->
   <div class="card-deck">
-    <div class="card" style="width: 20rem;">
+    <div class="card mx-auto" style="width: 20rem;">
     <a href="https://nomster-becca-douglass.herokuapp.com">
       <%= image_tag 'nomster1.png', class: 'card-img-top' %> </a>
       <div class="card-body">
         <h5 class="card-title">Inquest</h5>
         <p class="card-text">A Yelp clone that integrates with the Google Maps API
       and includes features like user comments, star ratings,
-      image uploading, and user authentication.  Checkout restaurants in Jackson, WY.
+      image uploading, and user authentication.  Checkout restaurants in Jackson, Wyoming through this app.
           <div class="project-link">
             <button type="button" class="button2"> <a href="https://github.com/beccadouglass/nomster" class="white"> GitHub</a> </button>
             <button type="button" class="button2"> <a href="https://nomster-becca-douglass.herokuapp.com" class="white"> Heroku</a> </button>
@@ -31,15 +31,15 @@
     </div>
  
   <!-- <div class="col"> -->
-    <div class="card" style="width: 20rem;">
+    <div class="card mx-auto" style="width: 20rem;">
     <a href="https://flixter-beccadouglass.herokuapp.com">
         <%= image_tag 'flixter1.png', class: 'card-img-top' %> </a>
       <div class="card-body">
         <h5 class="card-title">Flixter</h5>
-        <p class="card-text">A two sided, video streaming marketplace platform that
+        <p class="card-text">A educational ecourse with two sided, video streaming marketplace platform that
           features credit card payment capabilities, user role
           management, complex user interfaces, and advanced
-          database relationships.
+          database relationships. 
           <div class="project-link">
             <button type="button" class="button2"> <a href="https://github.com/beccadouglass/flixter" class="white"> GitHub</a> </button>
             <button type="button" class="button2"> <a href="https://flixter-beccadouglass.herokuapp.com" class="white"> Heroku</a> </button>
@@ -54,7 +54,7 @@
     </div>
   <!-- </div> -->
   <!-- <div class="col"> -->
-    <div class="card" style="width: 20rem;">
+    <div class="card mx-auto" style="width: 20rem;">
     <a href="https://shopper-rebecca-douglass.herokuapp.com">
       <%= image_tag 'shopper.png', class: 'card-img-top' %> </a>
       <div class="card-body">
@@ -78,14 +78,14 @@
     </div>
   <!-- </div> -->
   <!-- <div class="col"> -->
-    <div class="card" style="width: 20rem;">
+    <div class="card mx-auto" style="width: 20rem;">
     <a href="https://mello-rebecca-douglass.herokuapp.com/boards">
       <%= image_tag 'Melloboard.png', class: 'card-img-top' %> </a>
       <div class="card-body">
         <h5 class="card-title">Mello</h5>
         <p class="card-text">Boards, lists, and cards organizer app that
               allows you to prioritize work, family or personal projects.
-              features a fluid user interface by using JavaScript and JQuery. It
+              Features a fluid user interface by using JavaScript and JQuery. It
               allows users to rapidly add dynamic content.
           <div class="project-link">
             <button type="button" class="button2"> <a href="https://github.com/beccadouglass/mello-fullstack" class="white"> GitHub</a> </button>
@@ -102,15 +102,98 @@
     </div>
   </div>
   <!-- </div> -->
-    <!-- </div> -->
+  <!-- </div> -->
 
   </div>
   </div>
 <div>
-  <p>
-    <a href=https://github.com/beccadouglass>https://github.com/beccadouglass </a>
-    <a href="https://www.linkedin.com/in/rebecca-douglass-054402196/">https://www.linkedin.com/in/rebecca-douglass-054402196/</a>
-  </p>
+  <h2>Coding Snippets</h2>
+    <div class="box">
+      <h4>Temperature Conversion</h4>
+        <p>This ruby program will prompt the user for a temperature in degrees Celsius and let the user know
+          what the corresponding termperature is in Fahrenheit.
+        </p>
+    </div>
+    <div class="box">
+      <pre><code class="language-ruby">
+#code without using method
+puts &quot;Enter today's temperature
+in celsius&quot;
+celsius = gets.chomp
+val = celsius.to_i * 1.8 + 32
+puts val
+
+# code using method
+puts &quot;Enter today's temperature
+in celsius&quot;
+celsius = gets.chomp
+val = celsius.to_i
+def conversion(number)
+    return (number * 1.8) + 32
+    end
+puts conversion(val)
+</code></pre>
+
+  </div>
+    <br class="clear" />
+      <div class="box">
+        <h4>Ordinal Challenge</h4>
+          <p>This Ruby program will convert a plain number to the ordinal number. So for example, if the user
+          enters 2, it will display 2nd, if the user enters 3, it will display 3rd, etc </p>
+      </div>
+
+      <div class="box">
+        <pre><code class="language-ruby">
+puts &quot;Enter a number:&quot;
+number = gets.chomp
+val = number.to_i
+
+ord =  val % 10 
+ordsecond = val % 100
+
+if number == &quot;11&quot; || number == &quot;12&quot;
+|| number == &quot;13&quot;
+puts &quot;That's the #{number}th item&quot;
+elsif ord == 1 
+puts &quot;That's the #{number}st item&quot;
+elsif ord == 1 &amp;&amp; ordsecond == 1
+puts &quot;That's the #{number}th item&quot;
+elsif ord == 2 &amp;&amp; ordsecond != 1
+puts &quot;That's the #{number}nd item&quot;
+elsif ord == 3 
+puts &quot;That's the #{number}rd item&quot;
+else
+puts &quot;That's the #{number}th item&quot;
+end
+      </code></pre>
+    </div>   
+<br class="clear" />
+    <div class="box">
+      <h4>Foobar</h4>
+        <p>This Ruby program is an adaptation of a classic technical interview problem which displays
+        sequences of the Foobar pattern.</p>
+    </div>
+    <div class="box">
+      <pre><code class="language-ruby">
+puts &quot;How many items they want to see?&quot;
+items = gets.chomp.to_i
+numbers = (1..items)
+numbers.each do |num|
+
+if num % 3 == 0 &amp;&amp; num % 5 == 0
+puts &quot;FooBar&quot;
+elsif num % 3 == 0
+puts &quot;Foo&quot;
+elsif num % 5 == 0
+puts &quot;Bar&quot;
+else
+puts num
+end
+end
+      </code></pre>
+    </div>
+<br class="clear" />
+
 </div>
  
    

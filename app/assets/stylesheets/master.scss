@@ -42,6 +42,17 @@ html {
   text-rendering: optimizeLegibility;
 }
 
+hr {
+  color: #555555;
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 2px;
+}
+
 #flex-content-container {
   flex: 1;
 }
@@ -86,7 +97,8 @@ a:visited {
 
 a:hover,
 a:active {
-  color: rgb(175, 176, 177);
+  color: pink;
+  /*color: rgb(175, 176, 177);*/
 }
 
 .project-link {
@@ -101,27 +113,19 @@ a:active {
 /*buttons*/
 .button1 {
   background-color: #222222;
-  font-size: 20px;
+  font-size: 16px;
   font-family: Poppins;
-  color: #fff;
-  padding: 12px 28px;
-  border-radius: 12px;
-  margin: 20px 10px;
-}
-
-.button2 {
-  color: #fff;
-  background-color: #222222;
-  font-size: 14px;
-  font-family: Poppins;
+  color: pink;
   padding: 5px 10px;
   border-radius: 12px;
   margin: 20px 10px;
+  text-align: center;
 }
+
 
 button:hover,
 button:active {
-  box-shadow: 0px 5px 12px 0px #8db1ff;
+  box-shadow: 0px 5px 12px 0px pink;
 }
 
 /*header*/
@@ -135,23 +139,18 @@ button:active {
   box-shadow: 0px 3px 8px #a0a0a0;
 }
 
-.me {
-  height: 150px;
-  border-radius: 60px;
-  border-style: solid;
-  border-color: #50678E;
-  margin-top: 40px;
-}
 
-.box1 {
-  background-color: #fff;
+.box {
+  padding-top: 70px;
   float: left;
   width: 42.5%;
   margin-left: 5%;
   margin-top: 20px;
-  /*padding-top: 20px;*/
 }
 
+.box1 {
+  padding-top: 170px;
+}
 
 /*Cards*/
 .card-img-top {

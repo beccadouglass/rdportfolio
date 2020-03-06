@@ -21,11 +21,11 @@
 
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
           <ul class="navbar-nav ml-auto mt-2 mt-md-0">
-            <li class="nav-item active">
-             <a class="nav-link" <%= link_to "About", root_path %> <span class="sr-only">(current)</span></a>
+            <li class="nav-item">
+             <a class="nav-link" <%= link_to "About", static_pages_about_path %> </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#" >Projects</a>
+              <a class="nav-link" <%= link_to "Projects", root_path %> </a>
             </li>
           </ul>
         </div>

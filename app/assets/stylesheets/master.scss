@@ -1,7 +1,7 @@
 @import "bootstrap";
 @import url('https://fonts.googleapis.com/css?family=Courgette|Muli|Poppins&display=swap');
 
-
+/*----------Main---------*/
 h1,
 h2,
 h3,
@@ -20,7 +20,6 @@ h2 {
 
 body {
   min-height: 100%;
-  /*font-family: 'Muli', ;*/
   font-family: 'Poppins', ;
   background: image_url('grunge_wall1.png');
 }
@@ -62,14 +61,12 @@ hr {
   margin: 0 auto;
 }
 
-header {
-  height: 100vh;
-}
 
 .title {
   margin-bottom: 30px;
 }
 
+/*----------Navbar---------*/
 .navbar {
   box-shadow: 0px 1px 2px #6d6c6c;
   background: image_url('concrete_seamless.png');
@@ -85,7 +82,7 @@ header {
   margin-right: 40px;
 }
 
-/*Links*/
+/*----------Links---------*/
 a:link,
 a:visited {
   color: rgb(116, 115, 115);
@@ -110,7 +107,7 @@ a:active {
   text-align: left;
 }
 
-/*buttons*/
+/*---------buttons------------*/
 .button1 {
   background-color: #222222;
   font-size: 16px;
@@ -128,7 +125,11 @@ button:active {
   box-shadow: 0px 5px 12px 0px pink;
 }
 
-/*header*/
+/*---------header------------*/
+header {
+  height: 100vh;
+}
+
 .hero {
   background: image_url('rebeccabw.jpg') no-repeat center center;
   -webkit-background-size: 100%;
@@ -153,7 +154,7 @@ button:active {
 }
 
 
-/*Cards*/
+/*---------Cards----------*/
 .card-img-top {
   width: 100%;
   height: 250px;
@@ -200,7 +201,7 @@ button:active {
   margin: 10px;
 }
 
-/* About Pics */
+/*----------About Pics------------*/
 .white {
   background-color: #fff;
   margin: 0px;
@@ -269,21 +270,3 @@ button:active {
 .small {
   display: block;
 }
-
-
-
-/*footer
-#footer {
-
-  width: 100%;
-  min-height: 70px;
-  background-color: rgba(36, 32, 33, 0.9);
-  color: white;
-  padding: 10px 0px;
-  margin-top: 30px;
-}
-
-#footer a {
-  color: white;
-}
-*/

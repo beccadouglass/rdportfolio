@@ -108,7 +108,7 @@ a:active {
 }
 
 /*---------buttons------------*/
-.button1 {
+.button {
   background-color: #222222;
   font-size: 16px;
   font-family: Poppins;
@@ -201,6 +201,10 @@ header {
 
 .card-text {
   margin: 10px;
+}
+
+.card-footer {
+  text-align: center;
 }
 
 /*----------About Pics------------*/

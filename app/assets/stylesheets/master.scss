@@ -13,54 +13,58 @@ h6,
 }
 
 h2 {
-  text-align: center;
-  padding: 20px;
   color: rgb(255, 255, 255);
+  padding: 20px;
+  text-align: center;
 }
 
 body {
-  min-height: 100%;
-  font-family: 'Poppins', ;
   background: image_url('grunge_wall1.png');
+  font-family: 'Poppins', ;
+  min-height: 100%;
 }
 
-
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 html {
-  position: relative;
-  height: 100%;
   background-color: #fff;
   color: #555555;
   font-weight: 300;
   font-size: 20px;
+  height: 100%;
+  position: relative;
   text-rendering: optimizeLegibility;
 }
 
 hr {
   color: #555555;
+  border-style: inset;
+  border-width: 2px;
   display: block;
   margin-top: 0.5em;
   margin-bottom: 0.5em;
   margin-left: auto;
   margin-right: auto;
-  border-style: inset;
-  border-width: 2px;
 }
 
 #flex-content-container {
   flex: 1;
 }
 
-.row {
-  max-width: 1140px;
-  margin: 0 auto;
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
+.row {
+  margin: 0 auto;
+  max-width: 1140px;
+}
 
 .title {
   margin-bottom: 30px;
@@ -68,28 +72,29 @@ hr {
 
 /*----------Navbar---------*/
 .navbar {
-  box-shadow: 0px 1px 2px #6d6c6c;
   background: image_url('concrete_seamless.png');
   /*background-color: #222222;*/
+  box-shadow: 0px 1px 2px #6d6c6c;
   color: #222222;
-  text-align: right;
   padding-right: 40px;
+  text-align: right;
 }
 
 .navbar-brand {
-  font-family: 'Courgette', ;
   color: #222222;
+  font-family: 'Courgette', ;
   margin-right: 40px;
 }
 
 /*----------Links---------*/
 a:link,
 a:visited {
-  color: rgb(116, 115, 115);
+  color: #050000;
+  //color: rgb(219, 217, 217);
+  display: inline-block;
   padding: 5px 10px;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
 }
 
 a:hover,
@@ -100,6 +105,8 @@ a:active {
 
 .project-link {
   text-align: center;
+  margin-top: 20px;
+  bottom: 0;
 }
 
 .link-size {
@@ -107,17 +114,21 @@ a:active {
   text-align: left;
 }
 
-/*---------buttons------------*/
-//.button {
-//  padding: 5px 10px;
-//  border-radius: 12px;
-//  margin: 20px 10px;
-//}
+.contact-link {
+  color: rgb(94, 93, 93);
+}
 
+/*---------buttons------------*/
+.btn-light,
+.btn-dark {
+  box-shadow: 1px 5px 5px #dad8d8;
+  margin: 5px;
+  padding: 0;
+}
 
 button:hover,
 button:active {
-  box-shadow: 0px 5px 12px 0px pink;
+  //box-shadow: 0px 5px 12px 0px pink;
 }
 
 /*---------header------------*/
@@ -131,17 +142,17 @@ header {
   -moz-background-size: 100%;
   -o-background-size: 100%;
   background-size: 100%;
-  height: 370px;
   box-shadow: 0px 3px 8px #a0a0a0;
+  height: 370px;
 }
 
 
 .box {
-  padding-top: 70px;
   float: left;
-  width: 42.5%;
   margin-left: 5%;
   margin-top: 20px;
+  padding-top: 70px;
+  width: 42.5%;
 }
 
 .box1 {
@@ -150,8 +161,12 @@ header {
 
 
 /*---------Cards----------*/
+.card-body {
+  position: relative;
+}
+
 .card-img-top {
-  width: 100%;
+  box-shadow: 0px 0px 5px 0px #616161;
   height: 250px;
   opacity: 1.0;
   -webkit-filter: grayscale(100%);
@@ -160,8 +175,7 @@ header {
   filter: grayscale(50%);
   filter: rgb(32, 32, 32);
   /* IE 6-9 */
-  box-shadow: 0px 0px 5px 0px #616161;
-
+  width: 100%;
 }
 
 .card-img-top:hover {
@@ -179,10 +193,10 @@ header {
   margin-left: 100px;
   margin-top: 20px;
   /*display: block;*/
-  padding: 10px;
-  width: 18rem;
   min-width: 18rem;
   max-width: 18rem;
+  padding: 10px;
+  width: 18rem;
 }
 
 .card-deck {
@@ -190,17 +204,23 @@ header {
 }
 
 .card-title {
-  text-align: center;
   padding-top: 5px;
+  text-align: center;
 }
 
 .card-text {
-  margin: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 .card-footer {
   text-align: center;
 }
+
+//.project-link {
+// bottom: 2px;
+//position: absolute;
+//}
 
 /*----------About Pics------------*/
 .white {
@@ -212,38 +232,38 @@ header {
   background-color: #fff;
   color: #222222;
   font-family: 'Courgette', ;
-  text-align: center;
   margin: 0px;
   padding-top: 20px;
+  text-align: center;
 }
 
 .frosty {
-  padding: 40px 75px;
   background: #fff;
   color: #222222;
   font-family: 'Muli', ;
+  padding: 40px 75px;
   text-align: right;
 }
 
 .skills {
-  padding: 40px 75px;
   background: #fff;
   color: #222222;
   font-family: 'Poppins', ;
-  text-align: left;
   font-size: 14px;
+  padding: 40px 75px;
+  text-align: left;
 }
 
 .first-pic {
+  height: auto;
   width: 100%;
   max-width: 400px;
-  height: auto;
 }
 
 .no-gutter {
+  background-color: #fff;
   margin-left: 0;
   margin-right: 0;
-  background-color: #fff;
 }
 
 .row.no-gutter {
@@ -258,14 +278,14 @@ header {
 }
 
 .social {
+  background-color: #fff;
+  display: inline;
+  //display: inline-block;
+  font-size: 14px;
   margin-left: 25%;
+  //margin-bottom: 3px !important;
   text-align: center;
   width: 31.9%;
-  margin-bottom: 3px !important;
-  background-color: #fff;
-  display: inline-block;
-  font-size: 10px;
-  display: inline;
 }
 
 .small {

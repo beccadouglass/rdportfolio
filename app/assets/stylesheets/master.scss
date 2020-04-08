@@ -242,7 +242,7 @@ header {
   background: #fff;
   color: #222222;
   font-family: "Muli";
-  padding: 2.5rem 4.7rem;
+  padding: 1.5rem 2.5rem;
   text-align: right;
 }
 
@@ -251,7 +251,7 @@ header {
   color: #222222;
   font-family: "Poppins";
   font-size: 0.8rem;
-  padding: 2.5rem 4.7rem;
+  padding: 1rem 2rem;
   text-align: left;
 }
 
@@ -259,6 +259,10 @@ header {
   height: auto;
   width: 100%;
   max-width: 25rem;
+}
+
+.image-div {
+  text-align: right;
 }
 
 .no-gutter {
@@ -297,11 +301,26 @@ header {
   .navbar {
     font-size: 2rem;
   }
+
   html {
     font-size: 2rem;
   }
 
   .card {
     margin-bottom: 1rem;
+  }
+
+  .frosty {
+    text-align: center;
+    padding: 0.5rem 0.5rem;
+  }
+
+  .contact-link {
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  .image-div {
+    margin: 0 auto;
   }
 }

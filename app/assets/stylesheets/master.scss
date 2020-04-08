@@ -14,9 +14,9 @@ h6,
 
 h2 {
   color: rgb(255, 255, 255);
-  padding: 20px;
+  padding: 1.25rem;
   text-align: center;
-  margin-top: 45px;
+  margin-top: 2.8rem;
 }
 
 body {
@@ -35,7 +35,7 @@ html {
   background-color: #fff;
   color: #555555;
   font-weight: 300;
-  font-size: 20px;
+  font-size: 1.25rem;
   height: 100%;
   position: relative;
   text-rendering: optimizeLegibility;
@@ -64,11 +64,11 @@ hr {
 
 .row {
   margin: 0 auto;
-  max-width: 1140px;
+  max-width: 71.25rem;
 }
 
 .title {
-  margin-bottom: 30px;
+  margin-bottom: 1.85rem;
 }
 
 /*----------Navbar---------*/
@@ -77,14 +77,14 @@ hr {
   /*background-color: #222222;*/
   box-shadow: 0px 1px 2px #6d6c6c;
   color: #222222;
-  padding-right: 40px;
+  padding-right: 2.5rem;
   text-align: right;
 }
 
 .navbar-brand {
   color: #222222;
   font-family: "Courgette";
-  margin-right: 40px;
+  margin-right: 2.5rem;
 }
 
 /*----------Links---------*/
@@ -93,7 +93,7 @@ a:visited {
   color: #050000;
   //color: rgb(219, 217, 217);
   display: inline-block;
-  padding: 5px 10px;
+  padding: 0.3rem 0.6rem;
   text-align: center;
   text-decoration: none;
 }
@@ -106,12 +106,12 @@ a:active {
 
 .project-link {
   text-align: center;
-  margin-top: 20px;
+  margin-top: 1.25rem;
   bottom: 0;
 }
 
 .link-size {
-  font-size: 12px;
+  font-size: 0.75rem;
   text-align: left;
 }
 
@@ -123,7 +123,7 @@ a:active {
 .btn-light,
 .btn-outline-dark {
   box-shadow: 1px 5px 5px #dad8d8;
-  margin: 20px 10px;
+  margin: 1.25rem 0.65rem;
   padding: 0;
 }
 
@@ -144,19 +144,19 @@ header {
   -o-background-size: 100%;
   background-size: 100%;
   box-shadow: 0px 3px 8px #a0a0a0;
-  height: 370px;
+  height: 23rem;
 }
 
 .box {
   float: left;
   margin-left: 5%;
-  margin-top: 20px;
-  padding-top: 70px;
+  margin-top: 1.25rem;
+  padding-top: 4.3rem;
   width: 42.5%;
 }
 
 .box1 {
-  padding-top: 170px;
+  padding-top: 10.6rem;
 }
 
 /*---------Cards----------*/
@@ -166,7 +166,7 @@ header {
 
 .card-img-top {
   box-shadow: 0px 0px 5px 0px #616161;
-  height: 250px;
+  height: 15.6rem;
   opacity: 1;
   -webkit-filter: grayscale(100%);
   -moz-filter: grayscale(100%);
@@ -174,7 +174,7 @@ header {
   filter: grayscale(50%);
   filter: rgb(32, 32, 32);
   /* IE 6-9 */
-  width: 100%;
+  max-width: 100%;
 }
 
 .card-img-top:hover {
@@ -188,12 +188,12 @@ header {
 
 .card {
   box-shadow: 2px 3px 1px 0px #d6d6d6;
-  margin: 20px 0;
+  margin: 1.25rem 0;
   max-width: 20rem;
 }
 
 .card-deck {
-  margin: 40px;
+  margin: 2.5rem;
 }
 
 .card-title {
@@ -202,8 +202,8 @@ header {
 }
 
 .card-text {
-  margin-top: 10px;
-  margin-bottom: 20px;
+  margin-top: 0.63rem;
+  margin-bottom: 1.25rem;
 }
 
 .card-footer {
@@ -226,7 +226,7 @@ header {
   color: #222222;
   font-family: "Courgette";
   margin: 0px;
-  padding-top: 20px;
+  padding-top: 1.25rem;
   text-align: center;
 }
 
@@ -234,7 +234,7 @@ header {
   background: #fff;
   color: #222222;
   font-family: "Muli";
-  padding: 40px 75px;
+  padding: 2.5rem 4.7rem;
   text-align: right;
 }
 
@@ -242,15 +242,15 @@ header {
   background: #fff;
   color: #222222;
   font-family: "Poppins";
-  font-size: 14px;
-  padding: 40px 75px;
+  font-size: 0.8rem;
+  padding: 2.5rem 4.7rem;
   text-align: left;
 }
 
 .first-pic {
   height: auto;
   width: 100%;
-  max-width: 400px;
+  max-width: 25rem;
 }
 
 .no-gutter {
@@ -274,7 +274,7 @@ header {
   background-color: #fff;
   display: inline;
   //display: inline-block;
-  font-size: 14px;
+  font-size: 0.8rem;
   margin-left: 25%;
   //margin-bottom: 3px !important;
   text-align: center;
@@ -283,4 +283,13 @@ header {
 
 .small {
   display: block;
+}
+
+@media screen and (max-width: 1028px) {
+  .navbar {
+    font-size: 1.25rem;
+  }
+  html {
+    font-size: 2rem;
+  }
 }

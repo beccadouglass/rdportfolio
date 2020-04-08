@@ -293,7 +293,7 @@ header {
   display: block;
 }
 
-@media screen and (max-width: 1028px) {
+@media screen and (max-width: 991px) {
   .navbar {
     font-size: 2rem;
   }
@@ -302,8 +302,6 @@ header {
   }
 
   .card {
-    display: block;
-    margin: 0 auto;
     margin-bottom: 1rem;
   }
 }

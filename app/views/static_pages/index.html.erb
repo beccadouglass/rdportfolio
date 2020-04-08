@@ -139,15 +139,13 @@
   <h2 class='title'>Coding Snippets</h2>
     <div class="container">
     <div class ="row no-gutter">
-    <div class ="col-12">
-      <div class="box box1">
-      <h4>Temperature Conversion</h4>
-        <p>This ruby program will prompt the user for a temperature in degrees Celsius and let the user know
+        <div class ="col">
+            <h4>Temperature Conversion</h4>
+            <p>This ruby program will prompt the user for a temperature in degrees Celsius and let the user know
           what the corresponding termperature is in Fahrenheit.
-        </p>
-    </div>
-    <div class="box">
-      <pre><code class="language-ruby">
+            </p>
+          
+      <pre><code class="language-ruby coding-example">
 #code without using method
 puts &quot;Enter today's temperature
 in celsius&quot;
@@ -165,19 +163,19 @@ def conversion(number)
     end
 puts conversion(val)
 </code></pre>
-<hr>
+    </div>
   </div>
+</div>
+<br class="clear" />
 
-    <br class="clear" />
-
-      <div class="box box1">
+  <div class="container">
+    <div class ="row no-gutter">
+        <div class ="col">
         <h4>Ordinal Challenge</h4>
           <p>This Ruby program will convert a plain number to the ordinal number. So for example, if the user
           enters 2, it will display 2nd, if the user enters 3, it will display 3rd, etc </p>
-      </div>
 
-      <div class="box">
-        <pre><code class="language-ruby">
+        <pre><code class="language-ruby coding-example">
 puts &quot;Enter a number:&quot;
 number = gets.chomp
 val = number.to_i
@@ -200,17 +198,19 @@ else
 puts &quot;That's the #{number}th item&quot;
 end
       </code></pre>
-      <hr>
-    </div>   
+    </div>  
+  </div>
+</div>
 <br class="clear" />
 
-    <div class="box box1">
+<div class="container">
+  <div class ="row no-gutter">
+      <div class ="col">
       <h4>Foobar</h4>
         <p>This Ruby program is an adaptation of a classic technical interview problem which displays
         sequences of the Foobar pattern.</p>
-    </div>
-    <div class="box">
-      <pre><code class="language-ruby">
+   
+      <pre><code class="language-ruby coding-example">
 puts &quot;How many items they want to see?&quot;
 items = gets.chomp.to_i
 numbers = (1..items)
@@ -227,7 +227,6 @@ puts num
 end
 end
       </code></pre>
-      </div>
     </div>
   </div>
 </div>

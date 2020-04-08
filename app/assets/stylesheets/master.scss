@@ -2,10 +2,13 @@
 @import url("https://fonts.googleapis.com/css?family=Courgette|Muli|Poppins&display=swap");
 
 /*----------Main---------*/
+h4 {
+  margin: 1rem, 2rem, 3rem;
+}
+
 h1,
 h2,
 h3,
-h4,
 h5,
 h6,
 .navbar {
@@ -159,6 +162,11 @@ header {
   padding-top: 10.6rem;
 }
 
+.coding-example {
+  color: rgb(112, 111, 111);
+  padding-left: 20rem;
+}
+
 /*---------Cards----------*/
 .card-body {
   position: relative;
@@ -287,9 +295,15 @@ header {
 
 @media screen and (max-width: 1028px) {
   .navbar {
-    font-size: 1.25rem;
+    font-size: 2rem;
   }
   html {
     font-size: 2rem;
+  }
+
+  .card {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 1rem;
   }
 }

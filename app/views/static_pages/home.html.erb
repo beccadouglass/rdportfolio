@@ -5,21 +5,17 @@
 <body>
 
 <h2>Coding</h2>
-<h3 id="code-samples">Code Snippets</h3>
-                  <hr class="yellow">
 
-                  <br class="clear" />
-
-                  <div class="box">
-                    <h4>Temperature Conversion</h4>
-                    <p>This ruby program will prompt the user for a temperature in degrees Celsius and let the user know
-                      what
-                      the
-                      corresponding termperature is in Fahrenheit.
-                    </p>
-                  </div>
-                  <div class="box">
-                    <pre><code class="language-ruby">
+<div class="container">
+    <div class ="row no-gutter">
+      <%# <h3 id="code-samples">Code Snippets</h3> %>
+        <div class ="col">
+            <h4>Temperature Conversion</h4>
+            <p>This ruby program will prompt the user for a temperature in degrees Celsius and let the user know
+          what the corresponding termperature is in Fahrenheit.
+            </p>
+          
+      <pre><code class="language-ruby coding-example">
 #code without using method
 puts &quot;Enter today's temperature
 in celsius&quot;
@@ -36,73 +32,11 @@ def conversion(number)
     return (number * 1.8) + 32
     end
 puts conversion(val)
-</code></</pre>
-
-                  </div>
-                  <br class="clear" />
-                  <div class="box">
-                    <pre><code class="language-ruby">
-puts &quot;Enter a number:&quot;
-number = gets.chomp
-val = number.to_i
-
-ord =  val % 10 
-ordsecond = val % 100
-
-if number == &quot;11&quot; || number == &quot;12&quot;
-|| number == &quot;13&quot;
-puts &quot;That's the #{number}th item&quot;
-elsif ord == 1 
-puts &quot;That's the #{number}st item&quot;
-elsif ord == 1 &amp;&amp; ordsecond == 1
-puts &quot;That's the #{number}th item&quot;
-elsif ord == 2 &amp;&amp; ordsecond != 1
-puts &quot;That's the #{number}nd item&quot;
-elsif ord == 3 
-puts &quot;That's the #{number}rd item&quot;
-else
-puts &quot;That's the #{number}th item&quot;
-end
-    			</code></pre>
-                  </div>
-
-                  <div class="box">
-                    <h4>Ordinal Challenge</h4>
-                    <p>This Ruby program will convert a plain number to the ordinal number. So for example, if the user
-                      enters
-                      2, it
-                      will display 2nd, if the user enters 3, it will display 3rd, etc </p>
-                  </div>
-
-                  <br class="clear" />
-                  <div class="box">
-                    <h4>Foobar</h4>
-                    <p>This Ruby program is an adaptation of a classic technical interview problem which displays
-                      sequences of
-                      the
-                      Foobar pattern.</p>
-                  </div>
-
-                  <div class="box">
-                    <pre><code class="language-ruby">
-puts &quot;How many items they want to see?&quot;
-items = gets.chomp.to_i
-numbers = (1..items)
-numbers.each do |num|
-
-if num % 3 == 0 &amp;&amp; num % 5 == 0
-puts &quot;FooBar&quot;
-elsif num % 3 == 0
-puts &quot;Foo&quot;
-elsif num % 5 == 0
-puts &quot;Bar&quot;
-else
-puts num
-end
-end
-      </code></pre>
-                  </div>
-                  <br class="clear" />
+</code></pre>
+    </div>
+  </div>
+<hr>
+</div>
 
 
 </body>

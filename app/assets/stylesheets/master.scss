@@ -126,7 +126,7 @@ a:active {
 .btn-light,
 .btn-outline-dark {
   box-shadow: 1px 5px 5px #dad8d8;
-  margin: 1.25rem 0.65rem;
+  margin: 1.25rem 1.25rem;
   padding: 0;
 }
 
@@ -322,5 +322,8 @@ header {
 
   .image-div {
     margin: 0 auto;
+  }
+
+  .btn {
   }
 }

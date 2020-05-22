@@ -2,168 +2,213 @@
 <html lang="en">
   <head>
     <%# <meta name="viewport" content="width=device-width, initial-scale=1.0"> %>
-    <title>Web Projects by Rebecca Douglass</title>
+    <title>Coding by Rebecca Douglass</title>
     <link rel="shortcut icon" type="image/png" href="img/rfslogo.png">
 
   </head>
-  <h2 class="title">Projects</h2>
+  <h2 class="title">Coding Projects</h2>
 
 <body>
 
+<%# GRID CONTAINERS %>
 
-<div class ="my-container">
-  <div class="row">
-    <div class="col-lg-6 col-md-12">
+<div class="containergrid">
 
-      <div class="card mx-auto">
-        <a href="https://github.com/beccadouglass/rfswebsite">
-          <%= image_tag 'header.png', class: 'card-img-top' %> </a>
-          <div class="card-body">
-            <h5 class="card-title">Reflections</h5>
-            <p class="card-text">Website utilizing advanced CSS, HTML and SASS while currently adapting to PHP, Javascript, and JQuery all on the Wordpress platform. Delving into responsive design, animations and transitions.  Work in progress.  Please check back for updates.
-              <div class="project-link">
-                <button type="button" class="btn btn-light"> <a href="https://github.com/beccadouglass/rfswebsite" target="blank">GitHub</a> </button>
-                <!--<button type="button" class="button1"> <a href="https://nomster-becca-douglass.herokuapp.com" target="blank">Heroku</a> </button>-->
-              </div>
-              <!-- <div class ="card-footer">
-                <a href=https://github.com/beccadouglass/rfswebsite class="link-size" target="blank">https://github.com/beccadouglass/rfswebsite </a> 
-                <a href=https://nomster-becca-douglass.herokuapp.com class="link-size" target="blank">https://nomster-becca-douglass.herokuapp.com
-            </a>
-              </div>-->
-            </p>
-          </div>
-      </div>
-  </div>
+    <section class="designs">
+        <div class="design">
+            <%= image_tag 'flashcards.png', :class => "design__img" %>
+            <h5 class="design__name">Flashcards</h5>
+            <%# <div class="design__pics">
+                <div class="design__sprite">
+                <a href="#"><i class="fas fa-images fa-2x btn3"></i></a>
+                </div>
+                <p class="fas_label">Pics</p>
+            </div>
+            <div class="design__video">
+                <div class="design__sprite">
+                <a href="#"><i class="fas fa-video fa-2x btn3"></i></a>
+                </div>
+                <p class="fas_label">Video</p>
+            </div> 
+            <div class="design__web">
+                <div class="design__sprite">
+                <a href="#"><i class="fas fa-globe fa-2x btn3"></i></a>
+                </div>
+                <p class="fas_label">Visit</p>
+            </div> %>
+            <div class="design__git">
+                <div class="design__sprite">
+                <a href="https://github.com/beccadouglass/flashcards" target="blank"><i class="fab fa-github fa-2x btn3"></i></a>
+                </div>
+                <p class="fas_label">Code</p>
+            </div>
+            <div class="design__bottom">Javascript and ReactJS.  Flip through cards to test your knowledge in React history.  Click cards to flip and see answer on back.</div>
+        </div>
 
-  <div class="col-lg-6 col-md-12">
-
-      <div class="card mx-auto">
-        <a href="https://github.com/beccadouglass/flashcards">
-          <%= image_tag 'flashcards.png', class: 'card-img-top' %> </a>
-          <div class="card-body">
-            <h5 class="card-title">Flashcards</h5>
-            <p class="card-text">Interactive app built only using HTML, CSS, Javascript and ReactJS.  Flip through cards to test your knowledge in React history.  Click cards to flip and see answer on back.
-              <div class="project-link">
-                <button type="button" class="btn btn-light"> <a href="https://github.com/beccadouglass/flashcards" target="blank">GitHub</a> </button>
-                <!--<button type="button" class="button1"> <a href="https://nomster-becca-douglass.herokuapp.com" target="blank">Heroku</a> </button>-->
-              </div>
-              <!-- <div class ="card-footer">
-                <a href=https://github.com/beccadouglass/rfswebsite class="link-size" target="blank">https://github.com/beccadouglass/rfswebsite </a> 
-                <a href=https://nomster-becca-douglass.herokuapp.com class="link-size" target="blank">https://nomster-becca-douglass.herokuapp.com
-            </a>
-              </div>-->
-            </p>
-          </div>
-      </div>
-  </div>
-
-
-  <div class="col-lg-6 col-md-12">  
-    <div class="card mx-auto">
-      <a href="https://nomster-becca-douglass.herokuapp.com">
-        <%= image_tag 'nomster1.png', class: 'card-img-top' %> </a>
-      <div class="card-body">
-        <h5 class="card-title">Inquest</h5>
-        <p class="card-text">A Yelp clone that integrates with the Google Maps API
-      and includes features like user comments, star ratings,
-      image uploading, and user authentication.  Checkout restaurants in Jackson, Wyoming through this app.
-          <div class="project-link">
-            <button type="button" class="btn btn-light"> <a href="https://github.com/beccadouglass/nomster" target="blank">GitHub</a> </button>
-            <button type="button" class="btn btn-light"> <a href="https://nomster-becca-douglass.herokuapp.com" target="blank">Heroku</a> </button>
-          </div>
-         <!-- <div class ="card-footer">
-            <a href=https://github.com/beccadouglass/nomster class="link-size" target="blank">https://github.com/beccadouglass/nomster </a> 
-            <a href=https://nomster-becca-douglass.herokuapp.com class="link-size" target="blank">https://nomster-becca-douglass.herokuapp.com
-        </a>
-          </div> -->
-        </p>
-      </div>
-    </div>
-  </div>
-
- <div class="col-lg-6 col-md-12">
-    <div class="card mx-auto">
-      <a href="https://flixter-beccadouglass.herokuapp.com">
-        <%= image_tag 'flixter1.png', class: 'card-img-top' %> </a>
-      <div class="card-body">
-        <h5 class="card-title">Flixter</h5>
-        <p class="card-text">A educational ecourse with two sided, video streaming marketplace platform that
-          features credit card payment capabilities, user role
-          management, complex user interfaces, and advanced
-          database relationships. 
-          <div class="project-link">
-            <button type="button" class="btn btn-light"> <a href="https://github.com/beccadouglass/flixter" target="blank"> GitHub</a> </button>
-            <button type="button" class="btn btn-light"> <a href="https://flixter-beccadouglass.herokuapp.com" target="blank"> Heroku</a> </button>
-          </div>
-           <!-- <div class ="card-footer">
-              <a href=https://github.com/beccadouglass/flixter class="link-size" target="blank">https://github.com/beccadouglass/flixter </a> 
-              <a href=https://flixter-beccadouglass.herokuapp.com class="link-size" target="blank">https://flixter-beccadouglass.herokuapp.com
-              </a> 
-            </div> -->
-        </p>
-      </div>
-    </div>
-  </div>
-
-  <div class="col-lg-6 col-md-12">
-    <div class="card mx-auto">
-      <a href="https://shopper-rebecca-douglass.herokuapp.com">
-      <%= image_tag 'shopper.png', class: 'card-img-top' %> </a>
-      <div class="card-body">
-        <h5 class="card-title">Shopper</h5>
-        <p class="card-text">Simple ecommerce site developed solely by Rebecca that
+        <div class="design">
+            <%= image_tag 'shopper.png', :class => "design__img" %>
+            <h5 class="design__name">Chestnut Feather</h5>
+            <%# <div class="design__pics">
+                <div class="design__sprite">
+                <a href="#"><i class="fas fa-images fa-2x btn3"></i></a>
+                </div>
+                <p class="fas_label">Pics</p>
+            </div>
+            <div class="design__video">
+                <div class="design__sprite">
+                <a href="#"><i class="fas fa-video fa-2x btn3"></i></a>
+                </div>
+                <p class="fas_label">Video</p>
+            </div>  %>
+            <div class="design__web">
+                <div class="design__sprite">
+                <a href="https://shopper-rebecca-douglass.herokuapp.com" target="blank"><i class="fas fa-globe fa-2x btn3"></i></a>
+                </div>
+                <p class="fas_label">Visit</p>
+            </div>
+            <div class="design__git">
+                <div class="design__sprite">
+                <a href="https://github.com/beccadouglass/shopper" target="blank"><i class="fab fa-github fa-2x btn3"></i></a>
+                </div>
+                <p class="fas_label">Code</p>
+            </div>
+            <div class="design__bottom">Simple ecommerce site developed solely by Rebecca that
          allows signed in users to add products
          to cart and checkout with Stripe API.  
-         Also new products can be added by administration as they become available.
-         
-          <div class="project-link">
-              <button type="button"class="btn btn-light"> <a href="https://github.com/beccadouglass/shopper" target="blank"> GitHub</a> </button>
-              <button type="button"class="btn btn-light"> <a href="https://shopper-rebecca-douglass.herokuapp.com" target="blank"> Heroku</a> </button>
-          </div> 
-             <!-- <div class ="card-footer">
-                <a href=https://github.com/beccadouglass/shopper class="link-size" target="blank">https://github.com/beccadouglass/shopper </a> 
-                <a href=https://shopper-rebecca-douglass.herokuapp.com class="link-size" target="blank">https://shopper-rebecca-douglass.herokuapp.com
-                </a>
-              </div> -->
-        </p>
-      </div>
-    </div>
-  </div>
-
-
-  <div class="col-lg-6 col-md-12">
-    <div class="card mx-auto">
-      <a href="https://mello-rebecca-douglass.herokuapp.com/boards">
-        <%= image_tag 'Melloboard.png', class: 'card-img-top' %> </a>
-        <div class="card-body">
-          <h5 class="card-title">Mello</h5>
-          <p class="card-text">Boards, lists, and cards organizer app that
-              allows you to prioritize work, family or personal projects.
-              Features a fluid user interface by using JavaScript and JQuery. It
-              allows users to rapidly add dynamic content.
-            <div class="project-link">
-              <button type="button" class="btn btn-light"> <a href="https://github.com/beccadouglass/mello-fullstack" target="blank"> GitHub</a> </button>
-              <button type="button" class="btn btn-light"> <a href="https://mello-rebecca-douglass.herokuapp.com/boards" target="blank"> Heroku</a> </button>
-            </div>
-           <!-- > <div class ="card-footer">
-              <a href=https://github.com/beccadouglass/mello-fullstack class="link-size" target="blank">https://github.com/beccadouglass/mello-fullstack
-                </a> <a
-                href=https://mello-rebecca-douglass.herokuapp.com/boards class="link-size" target="blank">https://mello-rebecca-douglass.herokuapp.com/boards
-                </a>
-                <br> 
-            </div> -->
-          </p>
+         Also new products can be added by administration as they become available.</div>
         </div>
-    </div>
-  </div>
-</div>
-</div>
 
-  <br/>
-  <br/>
+        <div class="design">
+            <%= image_tag 'rfs-screen2.png', :class => "design__img"%>
+            <h5 class="design__name">Reflections From The Saddle</h5>
+            <%# <div class="design__pics">
+                <div class="design__sprite">
+                <a href="#"> <i class="fas fa-images fa-2x btn3"></i></a>
+                </div>
+                <p class="fas_label">Pics</p>
+            </div>
+            <div class="design__video">
+                <div class="design__sprite">
+                <a href="#"><i class="fas fa-video fa-2x btn3"></i></a>
+                </div>
+                <p class="fas_label">Video</p>
+            </div>
+            <div class="design__web">
+                <div class="design__sprite">
+                <a href="#"><i class="fas fa-globe fa-2x btn3"></i></a>
+                </div>
+                <p class="fas_label">Visit</p>
+            </div> %>
+            <div class="design__git">
+                <div class="design__sprite">
+                <a href="https://github.com/beccadouglass/rfswebsite" target="blank"><i class="fab fa-github fa-2x btn3"></i></a>
+                </div>
+                <p class="fas_label">Code</p>
+            </div>
+            <button class="design__bottom">Advanced CSS, SASS, PHP, Wordpress. Blog site with e-learning platform.</button>
+        </div>
+
+        <div class="design">
+            <%= image_tag 'nomster1.png', :class => "design__img"%>
+            <h5 class="design__name">Nomster</h5>
+            <%# <div class="design__pics">
+                <div class="design__sprite">
+                <a href="#"> <i class="fas fa-images fa-2x btn3"></i></a>
+                </div>
+                <p class="fas_label">Pics</p>
+            </div>
+            <div class="design__video">
+                <div class="design__sprite">
+                <a href="#"><i class="fas fa-video fa-2x btn3"></i></a>
+                </div>
+                <p class="fas_label">Video</p>
+            </div> %>
+            <div class="design__web">
+                <div class="design__sprite">
+                <a href="https://nomster-becca-douglass.herokuapp.com" target="blank"><i class="fas fa-globe fa-2x btn3"></i></a>
+                </div>
+                <p class="fas_label">Visit</p>
+            </div>
+            <div class="design__git">
+                <div class="design__sprite">
+                <a href="https://github.com/beccadouglass/nomster" target="blank"><i class="fab fa-github fa-2x btn3"></i></a>
+                </div>
+                <p class="fas_label">Code</p>
+            </div>
+            <div class="design__bottom">Ruby on Rails.  A Yelp clone that integrates with the Google Maps API
+      and includes features like user comments, star ratings,
+      image uploading, and user authentication.  Checkout restaurants in Jackson, Wyoming through this app.</div>
+        </div>
+
+        <div class="design">
+            <%= image_tag 'flixter1.png', :class => "design__img"%>
+            <h5 class="design__name">Flixter</h5>
+            <%# <div class="design__pics">
+                <div class="design__sprite">
+                <a href="#"> <i class="fas fa-images fa-2x btn3"></i></a>
+                </div>
+                <p class="fas_label">Pics</p>
+            </div>
+            <div class="design__video">
+                <div class="design__sprite">
+                <a href="#"><i class="fas fa-video fa-2x btn3"></i></a>
+                </div>
+                <p class="fas_label">Video</p>
+            </div> %>
+            <div class="design__web">
+                <div class="design__sprite">
+                <a href="https://flixter-beccadouglass.herokuapp.com" target="blank"><i class="fas fa-globe fa-2x btn3"></i></a>
+                </div>
+                <p class="fas_label">Visit</p>
+            </div>
+            <div class="design__git">
+                <div class="design__sprite">
+                <a href="https://github.com/beccadouglass/flixter" target="blank"><i class="fab fa-github fa-2x btn3"></i></a>
+                </div>
+                <p class="fas_label">Code</p>
+            </div>
+            <div class="design__bottom">Ruby on Rails.  A educational ecourse with two sided, video streaming marketplace platform that
+          features credit card payment capabilities, user role
+          management, complex user interfaces, and advanced
+          database relationships. </div>
+        </div>
+
+        <div class="design">
+            <%= image_tag 'Melloboard.png', :class => "design__img"%>
+            <h5 class="design__name">Mello</h5>
+            <%# <div class="design__pics">
+                <div class="design__sprite">
+                <a href="#"> <i class="fas fa-images fa-2x btn3"></i></a>
+                </div>
+                <p class="fas_label">Pics</p>
+            </div>
+            <div class="design__video">
+                <div class="design__sprite">
+                <a href="#"><i class="fas fa-video fa-2x btn3"></i></a>
+                </div>
+                <p class="fas_label">Video</p>
+            </div> %>
+            <div class="design__web">
+                <div class="design__sprite">
+                <a href="https://mello-rebecca-douglass.herokuapp.com/boards" target="blank"><i class="fas fa-globe fa-2x btn3"></i></a>
+                </div>
+                <p class="fas_label">Visit</p>
+            </div>
+            <div class="design__git">
+                <div class="design__sprite">
+                <a href="https://github.com/beccadouglass/mello-fullstack" target="blank"><i class="fab fa-github fa-2x btn3"></i></a>
+                </div>
+                <p class="fas_label">Code</p>
+            </div>
+            <div class="design__bottom">Javascript and JQuery.  Boards, lists, and cards organizer app that
+              allows you to prioritize work, family or personal projects.  Allows users to rapidly add dynamic content. </div>
+        </div>
+    </section>
+
+  </div>
 
   <h2 class='title'>Coding Snippets</h2>
-    <div class="container">
+    <div class="container shadow">
     <div class ="row no-gutter">
         <div class ="col">
             <h4>Temperature Conversion</h4>
@@ -194,7 +239,7 @@ puts conversion(val)
 </div>
 <br class="clear" />
 
-  <div class="container">
+  <div class="container shadow">
     <div class ="row no-gutter">
         <div class ="col">
         <h4>Ordinal Challenge</h4>
@@ -229,7 +274,7 @@ end
 </div>
 <br class="clear" />
 
-<div class="container">
+<div class="container shadow">
   <div class ="row no-gutter">
       <div class ="col">
       <h4>Foobar</h4>

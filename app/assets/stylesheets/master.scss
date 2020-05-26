@@ -606,6 +606,11 @@ header {
 
   .designs {
     grid-column: full-start / full-end;
+    margin: 40px;
   }
 
+}
+
+@media screen and (max-width: 600px) {
+  .designs {}
 }

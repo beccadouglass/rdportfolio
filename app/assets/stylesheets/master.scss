@@ -551,7 +551,7 @@ header {
   &__bottom {
     grid-column: 1 / -1;
     padding: .5rem;
-    font-size: .7rem;
+    font-size: .85rem;
     background-color: var(--color-grey-light-3);
   }
 
@@ -612,5 +612,10 @@ header {
 }
 
 @media screen and (max-width: 600px) {
-  .designs {}
+  .designs {
+
+    &__bottom {
+      font-size: 1.2rem;
+    }
+  }
 }
